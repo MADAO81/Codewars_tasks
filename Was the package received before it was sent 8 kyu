@@ -1,4 +1,4 @@
-# Was the package received before it was sent (Simplified)
+# Was the package received before it was sent? (Simplified)
 # This kata explores simplified time zones
 # Given tz_from, tz_to, start and duration, return a boolean that answers this question:
 # "Was the package received the day before it was sent?"
