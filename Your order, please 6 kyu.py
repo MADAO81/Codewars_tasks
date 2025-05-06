@@ -19,3 +19,6 @@ def order(sentence):
             if str(i) in word:
                 words_list.append(word)
     return " ".join(words_list)
+
+# def order(words):
+#   return ' '.join(sorted(words.split(), key=lambda w:sorted(w)))
