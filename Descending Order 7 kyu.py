@@ -31,3 +31,7 @@ def descending_order(num):
 #         out += digit * 10 ** i
 #
 #     return out
+
+
+# def Descending_Order(num):
+#    return int("".join(sorted(str(num), reverse=True)))
