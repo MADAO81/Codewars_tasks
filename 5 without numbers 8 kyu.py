@@ -12,3 +12,7 @@ def unusual_five():
     
 # def unusual_five():
 #     return "fiftyfive divided by eleven".count("e")
+
+#def unusual_five():
+#    text = "i am the great cornhollio! i am a gringo! i have no bunghole!"
+#    return text.count("a")
