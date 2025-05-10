@@ -13,3 +13,7 @@
 
 def find_needle(haystack):
     return "found the needle at position " + str(haystack.index("needle"))
+
+# def find_needle(haystack):
+#    result = str(haystack.index("needle")
+#    return f"found the needle at position {result}"
