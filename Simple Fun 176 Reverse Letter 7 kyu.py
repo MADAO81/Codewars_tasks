@@ -10,8 +10,8 @@
 # [output] a string
 
 import re
-def reverse_letter(string):
-    return re.sub("[^a-zA-Z]","",string)[::-1]
+def reverse_letter(st):
+    return re.sub("[^a-zA-Z]","",st)[::-1]
 
-# def reverse_letter(string):
-#     return "".join([x for x in string[::-1] if x.isalpha()])
+# def reverse_letter(st):
+#     return "".join([x for x in st[::-1] if x.isalpha()])
