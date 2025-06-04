@@ -23,5 +23,5 @@
 def get_first_python(users):
     for developer in users:
         if developer["language"] == "Python":
-            return developer["first_name"] +", "+ developer["country"]
+            return developer["first_name"] + ", " + developer["country"]
     return "There will be no Python developers"
