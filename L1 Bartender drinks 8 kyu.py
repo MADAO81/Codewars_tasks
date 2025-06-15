@@ -21,7 +21,5 @@ def get_drink_by_profession(param):
                       "bike gang member":"Moonshine",
                       "politician":"Your tax dollars",
                       "rapper":"Cristal"}
-    if param.lower() not in alcoholic_dict:
-        return "Beer"
-    else:
-        return alcoholic_dict.get(param.lower())
+
+    return alcoholic_dict.get(param.lower(),"Beer")
