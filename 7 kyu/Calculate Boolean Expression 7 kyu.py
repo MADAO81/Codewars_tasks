@@ -20,3 +20,11 @@ def calculate(expr: str, values: dict[str, int]) -> int:
     for ch in values:
         expr = expr.replace(ch, str(values.get(ch)))
     return eval(expr)
+
+
+# import re
+# def calculate(expr, values):
+#     return eval(re.sub(r'(\w)', r'{\1}', expr).format(**values))
+
+# def calculate(expr, values):
+#     return eval(expr, values)
