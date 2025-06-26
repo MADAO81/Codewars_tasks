@@ -25,3 +25,5 @@ def correct_polish_letters(st):
         st = st.replace(key,value)
     return st
         
+# def correct_polish_letters(s):
+#     return s.translate(str.maketrans("ąćęłńóśźż", "acelnoszz"))
