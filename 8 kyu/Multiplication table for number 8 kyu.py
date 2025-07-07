@@ -16,5 +16,5 @@
 
 # Note: newlines should be added between rows, but there should be no trailing newline at the end. If you're unsure about the format, look at the sample tests.
 
-def multi_table(n):
-    return '\n'.join(f'{i} * {n} = {i*n}' for i in range(1, 11))
+def multi_table(number):
+    return '\n'.join(f'{i} * {number} = {i*number}' for i in range(1, 11))
