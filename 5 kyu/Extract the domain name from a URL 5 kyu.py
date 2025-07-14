@@ -9,3 +9,5 @@ def domain_name(url):
     match = re.search('(https?://)?(www\d?\.)?(?P<name>[\w-]+)\.', url).group('name')
     return match
     
+def domain_name(url):
+    return url.split("//")[-1].split("www.")[-1].split(".")[0]
