@@ -12,3 +12,7 @@ def array_madness(a,b):
     for i in b:
         res_b += i**3
     return res_a>res_b
+
+
+# def array_madness(a,b):
+#     return sum(x ** 2 for x in a) > sum(x **3 for x in b)
