@@ -2,4 +2,4 @@
 # But! Every third mango is free!
 
 def mango(quantity, price):
-    return (quantity*price) - (quantity//3)*price
+    return (quantity - quantity//3)*price
