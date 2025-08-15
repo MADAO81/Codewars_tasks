@@ -15,5 +15,8 @@
 
 # Три пятьдесят))))
 
-def is_loch_ness_monster(string):
-    return "tree fiddy" in string or "3.50" in string or "three fifty" in string
+# def is_loch_ness_monster(string):
+#     return "tree fiddy" in string or "3.50" in string or "three fifty" in string
+
+def is_lock_ness_monster(s):
+    return any(i in s for i in ('tree fiddy', 'three fifty', '3.50'))
