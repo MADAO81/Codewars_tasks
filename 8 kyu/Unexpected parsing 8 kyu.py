@@ -8,5 +8,9 @@
 
 # But as you will see after clicking RUN or ATTEMPT this code has several bugs, please fix them.
 
+# def get_status(is_busy):
+#     return {"status":("available","busy")[is_busy]}
+
 def get_status(is_busy):
-    return {"status":("available","busy")[is_busy]}
+    status = "busy" if is_busy else "available"
+    return {"status" : status}
