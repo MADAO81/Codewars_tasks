@@ -1,0 +1,11 @@
+# https://www.codewars.com/kata/5732d3c9791aafb0e4001236/train/python
+
+import math
+def round_it(n):
+    s = str(n).split(".")
+    if len(s[0])>len(s[1]):
+        return math.floor(n)
+    elif len(s[0])<len(s[1]):
+        return math.ceil(n)
+    else:
+        return round(n)
