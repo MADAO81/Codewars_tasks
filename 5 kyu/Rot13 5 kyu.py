@@ -1,41 +1,43 @@
-# Rot13
-# ROT13 is a simple letter substitution cipher that replaces a letter with the letter 13 
-# letters after it in the alphabet. ROT13 is an example of the Caesar cipher.
+# How can you tell an extrovert from an introvert at NSA?
+# Va gur ryringbef, gur rkgebireg ybbxf ng gur BGURE thl'f fubrf.
 
-# Create a function that takes a string and returns the string ciphered with Rot13. 
-# If there are numbers or special characters included in the string, they should be returned as they are.
-# Only letters from the latin/english alphabet should be shifted, like in the original Rot13 "implementation".
+# I found this joke on USENET, but the punchline is scrambled. Maybe you can decipher it?
+# According to Wikipedia, ROT13 is frequently used to obfuscate jokes on USENET.
 
-# Please note that using encode is considered cheating.
+# For this task you're only supposed to substitute characters. Not spaces, punctuation, numbers, etc.
+
+# Test examples:
+
+# "EBG13 rknzcyr." -> "ROT13 example."
+
+# "This is my first ROT13 excercise!" -> "Guvf vf zl svefg EBG13 rkprepvfr!"
+
+# def rot13(message):
+#     import codecs
+#     return codecs.encode(message, 'rot_13')
+
+# def rot13(message):
+#     cipher_table = {}
+#     for ch in range(0,26):
+#         cipher_table[chr(ch + ord("A"))] = chr(((ch + 13) % 26) + ord("A"))
+#         cipher_table[chr(ch + ord("a"))] = chr(((ch + 13) % 26) + ord("a"))
+#     return "".join([cipher_table[char] if char in cipher_table else char for char in message])
+
+# import string
+
+# def rot13(message):
+# 	first = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+#    	trance = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'
+# 	return message.translate(string.maketrans(first, trance)) 
 
 def rot13(message):
-    rot = 13
-    new_message = ''
-    for s in message:
-        num = ord(s) 
-        if ord('A') <= num <= ord('Z'):
-            new = (num - ord('A') + rot) % 26 + ord('A')
-        elif ord('a') <= num <= ord('z'): 
-            new = (num - ord('a') + rot) % 26 + ord('a')
+    def decode(c):
+        if 'a' <= c <= 'z':
+            base = 'a'
+        elif 'A' <= c <= 'Z':
+            base = 'A'
         else:
-            new = num
-        new_message += chr(new)
-    return new_message
-    
-    
-    
-# def rot13(message):
-#     alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-#     outputMessage = ""
-#     for letter in message:
-#         if letter in alpha.lower():
-#             outputMessage += alpha[(alpha.lower().index(letter) +13) % 26].lower()
-#         elif letter in alpha:
-#             outputMessage += alpha[(alpha.index(letter) +13) % 26]
-#         else:
-#             outputMessage += letter
-#     return outputMessage
+            return c
+        return chr((ord(c) - ord(base) + 13) % 26 + ord(base))
+    return "".join(decode(c) for c in message)
 
-
-# def rot13(message):
-#     return message.translate(message.maketrans('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz','NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'))
