@@ -27,4 +27,4 @@ def num_primorial(n):
             primorial *= x
             n -= 1
         x += 2
-    return primori
+    return primorial
