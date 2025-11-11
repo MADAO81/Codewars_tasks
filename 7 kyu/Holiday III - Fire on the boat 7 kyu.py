@@ -1,0 +1,11 @@
+# https://www.codewars.com/kata/57e8fba2f11c647abc000944/train/python
+
+
+# def fire_fight(s):
+#     return s.replace('Fire', '~~')
+
+import re
+
+def fire_fight(s):
+    return re.sub(r'Fire','~~',s)
+        
