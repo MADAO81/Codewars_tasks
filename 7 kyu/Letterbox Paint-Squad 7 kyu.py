@@ -11,9 +11,14 @@
 #     return [a[x] for x in "0123456789"]
   
 
+# def paint_letterboxes(start, finish):
+#     xs = [0] * 10
+#     for n in range(start, finish+1):
+#         for i in str(n):
+#             xs[int(i)] += 1
+#     return xs
+
+
 def paint_letterboxes(start, finish):
-    xs = [0] * 10
-    for n in range(start, finish+1):
-        for i in str(n):
-            xs[int(i)] += 1
-    return xs
+    boxes = ''.join([str(b) for b in range(start,finish+1)])
+    return [boxes.count(n) for n in '0123456789']
