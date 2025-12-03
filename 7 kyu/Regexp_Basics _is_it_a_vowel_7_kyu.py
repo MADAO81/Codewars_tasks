@@ -9,7 +9,13 @@
 #     return s.lower() in set("aeiou")
 
 
+# import re
+
+# def is_vowel(s):
+#     return True if re.match(r"^[AaEeIiOoUu](?!\n)$", s) else False
+
 import re
+
 def is_vowel(s): 
-    regex = r'^[aeiou]{1}$'
-    return bool(re.match(regex, re.escape(s), re.IGNORECASE))
+    pattern = r'^[aeiou]{1}$'
+    return bool(re.match(pattern, re.escape(s), re.IGNORECASE))
