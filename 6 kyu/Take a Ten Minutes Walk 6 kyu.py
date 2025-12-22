@@ -11,22 +11,32 @@
 # Note: you will always receive a valid array containing a random assortment of direction 
 # letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).
 
-def is_valid_walk(walk):
-    ns = 0
-    ew = 0
-    if len(walk) == 10:
-        for step in walk:
-            if step == "n":
-                ns += 1
-            if step == "s":
-                ns -= 1
-            if step == "w":
-                ew +=1
-            if step == "e":
-                ew -=1
-    else:
-        return False
-    return ns == 0 and ew == 0
-    
+# def is_valid_walk(walk):
+#     ns = 0
+#     ew = 0
+#     if len(walk) == 10:
+#         for step in walk:
+#             if step == "n":
+#                 ns += 1
+#             if step == "s":
+#                 ns -= 1
+#             if step == "w":
+#                 ew +=1
+#             if step == "e":
+#                 ew -=1
+#     else:
+#         return False
+#     return ns == 0 and ew == 0
+
+
 # def isValidWalk(walk):
-#     return len(walk) == 10 and walk.count('n') == walk.count('s') and walk.count('e') == walk.count('w')
+#     if (walk.count('n') == walk.count('s') and 
+#         walk.count('e') == walk.count('w') and
+#         len(walk) == 10):
+#             return True
+#     return False
+
+
+def is_valid_walk(walk):
+    return len(walk) == 10 and walk.count('n') == walk.count('s') and walk.count('e') == walk.count('w')
+    
