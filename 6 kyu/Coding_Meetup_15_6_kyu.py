@@ -12,5 +12,10 @@
 
 
 
+# def find_odd_names(lst): 
+#     return [dev for dev in lst if sum(map(ord, dev["firstName"]))%2]
+
+
+
 def find_odd_names(lst): 
     return [x for x in lst if sum(map(ord, x["firstName"])) % 2]
