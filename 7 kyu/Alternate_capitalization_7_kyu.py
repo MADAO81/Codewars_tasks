@@ -4,10 +4,6 @@
 
 # The input will be a lowercase string with no spaces.
 
-def capitalize(s):
-    s = "".join(char if i%2 else char.upper() for i,char in enumerate(s))
-    return [s, s.swapcase()]
-
 
 # def capitalize(s):
 #     word = ""
@@ -20,3 +16,11 @@ def capitalize(s):
 #     output.append(word)
 #     output.append(word.swapcase())
 #     return output
+
+
+def capitalize(s):
+    s = "".join(char if i%2 else char.upper() for i,char in enumerate(s))
+    return [s, s.swapcase()]
+
+
+
