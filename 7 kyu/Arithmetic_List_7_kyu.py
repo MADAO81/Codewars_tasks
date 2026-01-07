@@ -10,15 +10,16 @@
 # Be sure to check out my Arithmetic sequence Kata first ;)
 # Don't forget about the indexing pitfall ;)
 
-def seqlist(first, c, l):
-    result = [first]
-    count = 0
-    somechar = first
-    while count != (l-1):
-        somechar += c
-        result.append(somechar)
-        count +=1
-    return result
+# def seqlist(first, c, l):
+#     result = [first]
+#     count = 0
+#     somechar = first
+#     while count != (l-1):
+#         somechar += c
+#         result.append(somechar)
+#         count +=1
+#     return result
 
-# def seqlist(first,c,l):
-#     return [first+x*c for x in range(l)  ]
+
+def seqlist(first,c,l):
+    return [first+x*c for x in range(l)]
