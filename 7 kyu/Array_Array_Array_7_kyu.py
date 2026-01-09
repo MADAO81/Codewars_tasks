@@ -12,18 +12,18 @@
 # if (x) == ['a', 3] you should return [['a', 3], ['a', 3], ['a', 3]].
 
 
-def explode(arr):
-    result = []
-    if all(isinstance(x, str) for x in arr):      
-        return "Void!"
-    else:
-        for ch in arr:
-            if isinstance(ch, int):
-                for i in range(ch):
-                    result.append(arr)
-    return result
+# def explode(arr):
+#     result = []
+#     if all(isinstance(x, str) for x in arr):      
+#         return "Void!"
+#     else:
+#         for ch in arr:
+#             if isinstance(ch, int):
+#                 for i in range(ch):
+#                     result.append(arr)
+#     return result
     
     
-# def explode(arr):  
-#     numbers = [n for n in arr if type(n) == int]
-#     return [arr] * sum(numbers) if numbers else "Void!"
+def explode(arr):  
+    numbers = [n for n in arr if type(n) == int]
+    return [arr] * sum(numbers) if numbers else "Void!"
