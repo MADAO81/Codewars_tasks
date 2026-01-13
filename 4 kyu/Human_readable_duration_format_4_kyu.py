@@ -32,6 +32,32 @@
 # should not return 61 seconds, but 1 minute and 1 second instead. Formally, the duration specified by of a component 
 # must not be greater than any valid more significant unit of time.
 
+
+# times = [("year", 365 * 24 * 60 * 60), 
+#          ("day", 24 * 60 * 60),
+#          ("hour", 60 * 60),
+#          ("minute", 60),
+#          ("second", 1)]
+
+# def format_duration(seconds):
+
+#     if not seconds:
+#         return "now"
+
+#     chunks = []
+#     for name, secs in times:
+#         qty = seconds // secs
+#         if qty:
+#             if qty > 1:
+#                 name += "s"
+#             chunks.append(str(qty) + " " + name)
+
+#         seconds = seconds % secs
+
+#     return ', '.join(chunks[:-1]) + ' and ' + chunks[-1] if len(chunks) > 1 else chunks[0]
+
+
+
 def format_duration(seconds):
     words = ["year", "day", "hour", "minute", "second"]
 
@@ -62,25 +88,4 @@ def format_duration(seconds):
             
             
             
-# times = [("year", 365 * 24 * 60 * 60), 
-#          ("day", 24 * 60 * 60),
-#          ("hour", 60 * 60),
-#          ("minute", 60),
-#          ("second", 1)]
 
-# def format_duration(seconds):
-
-#     if not seconds:
-#         return "now"
-
-#     chunks = []
-#     for name, secs in times:
-#         qty = seconds // secs
-#         if qty:
-#             if qty > 1:
-#                 name += "s"
-#             chunks.append(str(qty) + " " + name)
-
-#         seconds = seconds % secs
-
-#     return ', '.join(chunks[:-1]) + ' and ' + chunks[-1] if len(chunks) > 1 else chunks[0]
