@@ -8,12 +8,12 @@
 # "1plus2plus3plus4"  --> "10"
 # "1plus2plus3minus4" -->  "2"
 
-import re
-def calculate(s):
-    result = re.sub("plus","+",s)
-    result = re.sub("minus","-",result) 
-    return str(eval(result))
-    
-    
+# import re
 # def calculate(s):
-#     return str(eval(s.replace("plus", "+").replace("minus", "-")))
+#     result = re.sub("plus","+",s)
+#     result = re.sub("minus","-",result) 
+#     return str(eval(result))
+    
+    
+def calculate(s):
+    return str(eval(s.replace("plus", "+").replace("minus", "-")))
