@@ -16,15 +16,16 @@
 # # B & A | C = 0 & 1 | 1 = 0 | 1 = 1 
 
 
-def calculate(expr: str, values: dict[str, int]) -> int:
-    for ch in values:
-        expr = expr.replace(ch, str(values.get(ch)))
-    return eval(expr)
+# def calculate(expr: str, values: dict[str, int]) -> int:
+#     for ch in values:
+#         expr = expr.replace(ch, str(values.get(ch)))
+#     return eval(expr)
 
 
 # import re
 # def calculate(expr, values):
 #     return eval(re.sub(r'(\w)', r'{\1}', expr).format(**values))
 
-# def calculate(expr, values):
-#     return eval(expr, values)
+
+def calculate(expr, values):
+    return eval(expr, values)
