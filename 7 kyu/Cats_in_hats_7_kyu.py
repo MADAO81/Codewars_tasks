@@ -7,6 +7,21 @@
 # n = the number of cats
 # fix to 3 decimal places.
 
+
+# def height(n):
+#     result = (2000000 * (1 - 0.4 ** (n + 1))) / (1 - 0.4)
+#     return '{:.3f}'.format(result)
+
+
+# def height(n):
+#     height = cat = 2000000
+#     for i in range(n):
+#         cat /= 2.5
+#         height += cat
+#     return f'{height:.3f}'
+
+
+
 def height(n):
     height_cat = 2000000
     count = 0
@@ -20,13 +35,3 @@ def height(n):
     return (f"{result:.3f}")
     
 
-# def height(n):
-#     result = (2000000 * (1 - 0.4 ** (n + 1))) / (1 - 0.4)
-#     return '{:.3f}'.format(result)
-
-# def height(n):
-#     height = cat = 2000000
-#     for i in range(n):
-#         cat /= 2.5
-#         height += cat
-#     return f'{height:.3f}'
