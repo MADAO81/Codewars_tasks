@@ -16,12 +16,12 @@
 
 # Good luck!
 
-def grabscrab(said, possible_words):
-    result = []
-    for word in possible_words:
-        if sorted(word) == sorted(said):
-            result.append(word)
-    return result
+# def grabscrab(said, possible_words):
+#     result = []
+#     for word in possible_words:
+#         if sorted(word) == sorted(said):
+#             result.append(word)
+#     return result
     
     
 def grabscrab(said, possible_words):
