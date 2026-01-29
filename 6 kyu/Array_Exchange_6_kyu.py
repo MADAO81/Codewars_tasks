@@ -15,10 +15,6 @@
 # other_array == ['c', 'b', 'a']
 
 
-def exchange_with(a, b):
-    a[:], b[:] = b[::-1], a[::-1]
-
-
 # def exchange_with(a, b):
 #     c,d =b[::-1],a[::-1]
 #     a.clear()
@@ -26,3 +22,7 @@ def exchange_with(a, b):
 #     a +=c
 #     b +=d
 #     return a,b
+
+
+def exchange_with(a, b):
+    a[:], b[:] = b[::-1], a[::-1]
