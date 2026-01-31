@@ -6,13 +6,13 @@
 # For example: "a" is encoded with "z", "b" with "y", "c" with "x", etc
 
 
-import string
-def decode(message):
-    alphabet = 'abcdefghijklmnopqrstuvwxyz'
-    trans = str.maketrans(alphabet, alphabet[::-1], '')
-    return message.lower().translate(trans)
-
-
-# from string import ascii_lowercase as alphabet
+# import string
 # def decode(message):
-#     return message.translate(str.maketrans(alphabet, alphabet[::-1]))
+#     alphabet = 'abcdefghijklmnopqrstuvwxyz'
+#     trans = str.maketrans(alphabet, alphabet[::-1], '')
+#     return message.lower().translate(trans)
+
+
+from string import ascii_lowercase as alphabet
+def decode(message):
+    return message.translate(str.maketrans(alphabet, alphabet[::-1]))
