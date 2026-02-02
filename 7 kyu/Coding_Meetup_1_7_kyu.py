@@ -21,13 +21,13 @@
 # The format of the strings will always be Europe and JavaScript.
 # All data will always be valid and uniform as in the example above.
 
-def count_developers(lst):
-    count = 0
-    for developer in lst:
-        if developer["language"] == "JavaScript" and developer["continent"] == "Europe":
-            count += 1 
-    return count
-    
-    
 # def count_developers(lst):
-#     return sum(x["language"] == "JavaScript" and x["continent"] == "Europe" for x in lst)
+#     count = 0
+#     for developer in lst:
+#         if developer["language"] == "JavaScript" and developer["continent"] == "Europe":
+#             count += 1 
+#     return count
+    
+    
+def count_developers(lst):
+    return sum(x["language"] == "JavaScript" and x["continent"] == "Europe" for x in lst)
