@@ -12,11 +12,11 @@
 #
 # Fundamentals
 
-def descending_order(num):
-    if num == 0:
-        return 0
-    else:
-        return int("".join(sorted([num for num in str(num)], reverse=True)))
+# def descending_order(num):
+#     if num == 0:
+#         return 0
+#     else:
+#         return int("".join(sorted([num for num in str(num)], reverse=True)))
 
 # def Descending_Order(num):
 #     digits = []
@@ -33,5 +33,5 @@ def descending_order(num):
 #     return out
 
 
-# def Descending_Order(num):
-#    return int("".join(sorted(str(num), reverse=True)))
+def Descending_Order(num):
+   return int("".join(sorted(str(num), reverse=True)))
