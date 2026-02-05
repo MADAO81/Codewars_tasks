@@ -31,17 +31,17 @@
 # The input array will always be valid and formatted as in the example above.
 
 
-def greet_developers(lst): 
-    new_lst = []
-    for developer in lst:
-        developer.update({"greeting":("Hi " + developer['firstName'] + 
-                                      ", what do you like the most about "+ 
-                                      developer["language"] + "?")})
-        new_lst.append(developer)
-    return new_lst
+# def greet_developers(lst): 
+#     new_lst = []
+#     for developer in lst:
+#         developer.update({"greeting":("Hi " + developer['firstName'] + 
+#                                       ", what do you like the most about "+ 
+#                                       developer["language"] + "?")})
+#         new_lst.append(developer)
+#     return new_lst
     
 
-# def greet_developers(lst): 
-#     for x in lst:
-#         x["greeting"] = f"Hi {x['firstName']}, what do you like the most about {x['language']}?"
-#     return lst
+def greet_developers(lst): 
+    for x in lst:
+        x["greeting"] = f"Hi {x['firstName']}, what do you like the most about {x['language']}?"
+    return lst
