@@ -22,11 +22,13 @@
 #
 # The input array will always be valid and formatted as in the example above.
 
-def is_ruby_coming(lst):
-    for developer in lst:
-        if developer["language"] == "Ruby":
-            return True
-    return False
 
 # def is_ruby_coming(lst):
-#     return any(x["language"] == "Ruby" for x in lst)
+#     for developer in lst:
+#         if developer["language"] == "Ruby":
+#             return True
+#     return False
+
+
+def is_ruby_coming(lst):
+    return any(x["language"] == "Ruby" for x in lst)
