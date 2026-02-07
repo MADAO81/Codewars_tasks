@@ -8,9 +8,9 @@
 # "camel case word" --> "CamelCaseWord"
 # Don't forget to rate this kata! Thanks :)
 
-def camel_case(s):
-    return "".join([letter.title() for letter in s.split()])
-    
-    
 # def camel_case(s):
-#     return s.title().replace(' ','')
+#     return "".join([letter.title() for letter in s.split()])
+    
+    
+def camel_case(s):
+    return s.title().replace(' ','')
