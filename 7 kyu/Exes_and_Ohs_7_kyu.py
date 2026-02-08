@@ -8,16 +8,16 @@
 # XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 # XO("zzoo") => false
 
-def xo(s):
-    x_count = 0
-    o_count = 0
-    for ch in s.lower():
-        if ch == "x":
-            x_count +=1
-        elif ch == "o":
-            o_count +=1
-    return x_count == o_count
-    
-    
 # def xo(s):
-#     return s.lower().count('x') == s.lower().count('o')
+#     x_count = 0
+#     o_count = 0
+#     for ch in s.lower():
+#         if ch == "x":
+#             x_count +=1
+#         elif ch == "o":
+#             o_count +=1
+#     return x_count == o_count
+    
+    
+def xo(s):
+    return s.lower().count('x') == s.lower().count('o')
