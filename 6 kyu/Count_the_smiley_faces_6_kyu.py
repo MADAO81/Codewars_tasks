@@ -20,14 +20,6 @@
 # In case of an empty array return 0. You will not be tested with invalid input (input will always be an array).
 # Order of the face (eyes, nose, mouth) elements will always be the same.
 
-def count_smileys(arr):
-    counter = 0
-    for ch in arr:
-        if len(ch) == 2 and ch[0] in [":",";"] and ch[1] in [")","D"]:
-            counter +=1
-        elif len(ch) > 2 and ch[0] in [":",";"] and ch[1] in ["-","~"] and ch[2] in [")","D"]:
-            counter +=1
-    return counter
 
 
 # def count_smileys(arr):
@@ -41,3 +33,12 @@ def count_smileys(arr):
 #                 face = eye + nose + mouth
 #                 count += arr.count(face)
 #     return count
+
+def count_smileys(arr):
+    counter = 0
+    for ch in arr:
+        if len(ch) == 2 and ch[0] in [":",";"] and ch[1] in [")","D"]:
+            counter +=1
+        elif len(ch) > 2 and ch[0] in [":",";"] and ch[1] in ["-","~"] and ch[2] in [")","D"]:
+            counter +=1
+    return counter
