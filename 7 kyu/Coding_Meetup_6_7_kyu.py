@@ -21,16 +21,20 @@
 # (e.g. 'JavaScript' will always be formatted will upper-case 'J' and 'S'
 # The input array will always be valid and formatted as in the example above.
 
-def is_same_language(lst): 
-    languages = []
-    for dev in lst:
-        if len(languages) > 1:
-            return False
-        if dev["language"] not in languages:
-            languages.append(dev["language"])
-    if len(languages) > 1:
-        return False
-    return True
-    
-#  def is_same_language(lst): 
-#    return len(set(i["language"] for i in lst)) == 1
+
+
+# def is_same_language(lst): 
+#     languages = []
+#     for dev in lst:
+#         if len(languages) > 1:
+#             return False
+#         if dev["language"] not in languages:
+#             languages.append(dev["language"])
+#     if len(languages) > 1:
+#         return False
+#     return True
+
+
+
+ def is_same_language(lst): 
+   return len(set(i["language"] for i in lst)) == 1
