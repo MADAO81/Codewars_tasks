@@ -14,16 +14,17 @@
 #     { 'firstName': 'George', 'lastName': 'B.', 'country': 'England', 'continent': 'Europe', 'age': 81, 'language': 'C' },
 #     ]
 
-def count_languages(lst): 
-    lang = {}
-    for dev in lst:
-        if dev["language"] in lang:
-            lang[dev["language"]] += 1
-        else:
-            lang[dev["language"]] = 1
-    return lang
+
+# def count_languages(lst): 
+#     lang = {}
+#     for dev in lst:
+#         if dev["language"] in lang:
+#             lang[dev["language"]] += 1
+#         else:
+#             lang[dev["language"]] = 1
+#     return lang
     
 
-# from collections import Counter
-# def count_languages(lst): 
-#     return Counter([d['language'] for d in lst])
+from collections import Counter
+def count_languages(lst): 
+    return Counter([d['language'] for d in lst])
