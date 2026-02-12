@@ -11,13 +11,17 @@
 # > [2, 4]
 
 
-def find_all(array, n):
-    return [index for index, number in enumerate(array) if number == n]
-
-
 # def find_all(array, n):
 #     res = []
 #     for i in range(len(array)):
 #         if array[i] == n:
 #             res.append(i)
 #     return res
+
+
+
+
+def find_all(array, n):
+    return [index for index, number in enumerate(array) if number == n]
+
+
