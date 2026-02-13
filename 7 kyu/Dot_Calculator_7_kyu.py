@@ -26,21 +26,21 @@
 # * ".. - .."                 => ""
 
 
-def calculator(txt):
-    new_txt = txt.split()
-    result = []
-    if "+" in new_txt:
-        result = new_txt[0] + new_txt[2]
-    elif "-" in new_txt:
-        result = new_txt[0][:len(new_txt[0])-len(new_txt[2])]
-    elif "*" in new_txt:
-        result = new_txt[0] * len(new_txt[2])
-    elif "//" in new_txt:
-        result = new_txt[0][:len(new_txt[0])//len(new_txt[2])]
-    return result
-    
-    
 # def calculator(txt):
-#     a, op, b = txt.split()
-#     a, b = len(a), len(b)
-#     return '.' * eval(f'{a} {op} {b}')
+#     new_txt = txt.split()
+#     result = []
+#     if "+" in new_txt:
+#         result = new_txt[0] + new_txt[2]
+#     elif "-" in new_txt:
+#         result = new_txt[0][:len(new_txt[0])-len(new_txt[2])]
+#     elif "*" in new_txt:
+#         result = new_txt[0] * len(new_txt[2])
+#     elif "//" in new_txt:
+#         result = new_txt[0][:len(new_txt[0])//len(new_txt[2])]
+#     return result
+    
+    
+def calculator(txt):
+    a, op, b = txt.split()
+    a, b = len(a), len(b)
+    return '.' * eval(f'{a} {op} {b}')
