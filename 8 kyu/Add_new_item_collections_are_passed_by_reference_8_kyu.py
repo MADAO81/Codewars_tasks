@@ -6,10 +6,10 @@
 # (This Kata is originally designed for C# language and it shows that adding a new item to the input list is not going to work, 
 # even though the parameter is passed by value, but the value is poining to the reference of list and any change on parameter will be seen by caller)
 
-def add_extra(list_of_numbers):
-    new_list = list_of_numbers[:]
-    new_list.append(13)
-    return new_list
+# def add_extra(list_of_numbers):
+#     new_list = list_of_numbers[:]
+#     new_list.append(13)
+#     return new_list
 
-# def AddExtra(listOfNumbers):
-#     return listOfNumbers + [13]
+def AddExtra(listOfNumbers):
+    return listOfNumbers + [13]
