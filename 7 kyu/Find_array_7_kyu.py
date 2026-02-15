@@ -18,8 +18,6 @@
 # If either arr1 or arr2 is empty, you should return an empty arr (empty list in python, empty vector in c++). Note for c++ use std::vector arr1, arr2.
 
 
-def find_array(arr1, arr2):
-    return [arr1[ch] for ch in arr2 if len(arr1) > ch]
 
 
 # def find_array(arr1, arr2):
@@ -28,3 +26,7 @@ def find_array(arr1, arr2):
 #         if num < len(arr1):
 #             list1.append(arr1[num])
 #     return list1
+
+
+def find_array(arr1, arr2):
+    return [arr1[ch] for ch in arr2 if len(arr1) > ch]
