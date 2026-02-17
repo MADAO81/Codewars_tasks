@@ -12,13 +12,13 @@
 # Note: keep the original order of the names in the output.
 
 
-def friend(x):
-    friend_list = []
-    for person in x:
-        if len(person) == 4:
-            friend_list.append(person)
-    return friend_list        
-    
-    
 # def friend(x):
-#     return [f for f in x if len(f) == 4]
+#     friend_list = []
+#     for person in x:
+#         if len(person) == 4:
+#             friend_list.append(person)
+#     return friend_list        
+    
+    
+def friend(x):
+    return [f for f in x if len(f) == 4]
