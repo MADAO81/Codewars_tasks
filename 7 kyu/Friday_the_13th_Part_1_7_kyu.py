@@ -20,13 +20,14 @@
 
 # Happy Friday the 13th!
 
-def kill_count(counselors, jason):
-    victims = []
-    for counselor in counselors:
-        if counselor[1] < jason:
-            victims.append(counselor[0])
-    return victims
-    
 # def kill_count(counselors, jason):
-#     return [x for x, y in counselors if y < jason]
+#     victims = []
+#     for counselor in counselors:
+#         if counselor[1] < jason:
+#             victims.append(counselor[0])
+#     return victims
+
+
+def kill_count(counselors, jason):
+    return [x for x, y in counselors if y < jason]
     
