@@ -10,12 +10,12 @@
 # "A" --> "A"
 
 
-def get_middle(s):
-    half_s = len(s) // 2
-    if len(s)%2 == 0:
-        return s[(half_s - 1):(half_s + 1)]
-    else:
-        return s[half_s:(half_s+1)]
+# def get_middle(s):
+#     half_s = len(s) // 2
+#     if len(s)%2 == 0:
+#         return s[(half_s - 1):(half_s + 1)]
+#     else:
+#         return s[half_s:(half_s+1)]
 
 
 # def get_middle(s):
@@ -23,6 +23,6 @@ def get_middle(s):
 #     return s[index] if odd else s[index - 1:index + 1]
 
 
-# def get_middle(s):
-#     i = (len(s) - 1) // 2
-#     return s[i:-i] or s
+def get_middle(s):
+    i = (len(s) - 1) // 2
+    return s[i:-i] or s
