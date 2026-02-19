@@ -9,10 +9,11 @@
 # Don't forget the space after the closing parentheses!
 
 
-def create_phone_number(n):
-    step1 = "".join(map(str,n))
-    step2 = f"({step1[0:3]}) {step1[3:6]}-{step1[6:10]}"
-    return step2
-    
 # def create_phone_number(n):
-# 	return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
+#     step1 = "".join(map(str,n))
+#     step2 = f"({step1[0:3]}) {step1[3:6]}-{step1[6:10]}"
+#     return step2
+
+
+def create_phone_number(n):
+	return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
