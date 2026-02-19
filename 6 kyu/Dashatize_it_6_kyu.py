@@ -7,14 +7,14 @@
 # 274 -> '2-7-4'
 # 6815 -> '68-1-5'
 
-def dashatize(n):
-    n = str(n)
-    odds = ["1","3","5","7","9"]
-    for i in odds:
-        n = n.replace(i,"-" + i + "-")
-    n = n.replace("--","-")
-    n = n.strip("-")
-    return n
+# def dashatize(n):
+#     n = str(n)
+#     odds = ["1","3","5","7","9"]
+#     for i in odds:
+#         n = n.replace(i,"-" + i + "-")
+#     n = n.replace("--","-")
+#     n = n.strip("-")
+#     return n
     
 # import re
 # def dashatize(num):
@@ -24,8 +24,8 @@ def dashatize(n):
 #         return 'None'
 
 
-# def dashatize(num):
-#     num_str = str(num)
-#     for i in ['1','3','5','7','9']:
-#         num_str = num_str.replace(i,'-' + i + '-')
-#     return num_str.strip('-').replace('--','-')
+def dashatize(num):
+    num_str = str(num)
+    for i in ['1','3','5','7','9']:
+        num_str = num_str.replace(i,'-' + i + '-')
+    return num_str.strip('-').replace('--','-')
