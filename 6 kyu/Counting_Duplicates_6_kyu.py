@@ -13,16 +13,16 @@
 # "aA11" -> 2 # 'a' and '1'
 # "ABBA" -> 2 # 'A' and 'B' each occur twice
 
-import collections
-def duplicate_count(text):
-    count = 0
-    text_dict = collections.Counter(text.lower())
-    count_letters = text_dict.values()
-    for i in count_letters:
-        if i >1:
-            count += 1
-    return count
+# import collections
+# def duplicate_count(text):
+#     count = 0
+#     text_dict = collections.Counter(text.lower())
+#     count_letters = text_dict.values()
+#     for i in count_letters:
+#         if i >1:
+#             count += 1
+#     return count
     
     
-# def duplicate_count(s):
-#   return len([c for c in set(s.lower()) if s.lower().count(c)>1])
+def duplicate_count(s):
+  return len([c for c in set(s.lower()) if s.lower().count(c)>1])
