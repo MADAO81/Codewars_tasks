@@ -12,10 +12,7 @@
 # There will always be at least one number in the input string.
 # Output string must be two numbers separated by a single space, and highest number is first.
 
-def high_and_low(numbers):
-    numbers = [int(i) for i in numbers.split()]
 
-    return " ".join([str(max(numbers)), str(min(numbers))])
 
 
 # def high_and_low(numbers):
@@ -26,3 +23,9 @@ def high_and_low(numbers):
 #     result_line = sorted(result_line)
 #     result = str(result_line[-1]) + " " + str(result_line[0]) 
 #     return result
+
+
+def high_and_low(numbers):
+    numbers = [int(i) for i in numbers.split()]
+
+    return " ".join([str(max(numbers)), str(min(numbers))])
