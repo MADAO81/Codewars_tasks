@@ -7,11 +7,13 @@
 # gimme([5, 10, 14]) => 1
 # 10 is the number that fits between 5 and 14 and the index of 10 in the input array is 1.
 
-def gimme(input_array):
-    sorted_array = sorted(input_array)
-    desired_element = sorted_array[1]
-    return input_array.index(desired_element)
 
 # def gimme(inputArray):
 #     # Implement this function
 #     return inputArray.index(sorted(inputArray)[1])
+
+
+def gimme(input_array):
+    sorted_array = sorted(input_array)
+    desired_element = sorted_array[1]
+    return input_array.index(desired_element)
