@@ -9,15 +9,17 @@
 
 # Good luck!
 
-def capitalize(s, ind):
-    result = ""
-    for i,letter in enumerate(s):
-        if i in ind:
-            result += letter.upper()
-        else:
-            result += letter
-    return result
-    
-# def capitalize(s,ind):
-#     ind = set(ind)
-#     return ''.join(c.upper() if i in ind else c for i,c in enumerate(s))
+# def capitalize(s, ind):
+#     result = ""
+#     for i,letter in enumerate(s):
+#         if i in ind:
+#             result += letter.upper()
+#         else:
+#             result += letter
+#     return result
+
+
+
+def capitalize(s,ind):
+    ind = set(ind)
+    return ''.join(c.upper() if i in ind else c for i,c in enumerate(s))
