@@ -6,9 +6,6 @@
 # Given a string, detect whether or not it is a pangram. Return True if it is, 
 # False if not. Ignore numbers and punctuation.
 
-def is_pangram(st):
-    alphabet ="abcdefghijklmnopqrstuvwxyz"
-    return set(alphabet) <= set(st.lower())
 
 # import string
 
@@ -18,3 +15,9 @@ def is_pangram(st):
 #         if char not in s:
 #             return False
 #     return True
+
+
+
+def is_pangram(st):
+    alphabet ="abcdefghijklmnopqrstuvwxyz"
+    return set(alphabet) <= set(st.lower())
