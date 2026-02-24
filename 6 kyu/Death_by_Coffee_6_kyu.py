@@ -43,10 +43,7 @@
 
 # Peter (4/Sep/1965) can drink as much coffee as he likes [0, 0]. You're a legend Peter!!
 
-def coffee_limits(year, month, day):
-    health = int(f"{year:04d}{month:02d}{day:02d}")
-    drinks = (int(d,16) for d in("cafe","decaf"))
-    return [next((i for i in range(1,5001)if "dead" in f"{health + j*i:x}"),0) for j in drinks]
+
 
 
 # def coffee_limits(year, month, day):
@@ -59,3 +56,10 @@ def coffee_limits(year, month, day):
 #         if 'DEAD' in f'{h:X}':
 #             return i
 #     return 0
+
+
+
+def coffee_limits(year, month, day):
+    health = int(f"{year:04d}{month:02d}{day:02d}")
+    drinks = (int(d,16) for d in("cafe","decaf"))
+    return [next((i for i in range(1,5001)if "dead" in f"{health + j*i:x}"),0) for j in drinks]
