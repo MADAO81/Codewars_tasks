@@ -10,14 +10,16 @@
 # }
 # P.S. If n < 0, return false
 
-def check_vowel(strng, position):
-    strng = strng.lower()
-    vowel_list = ["a","e","i","o","u"]
-    if position < 0 or position > len(strng):
-        return False
-    if strng[position] in vowel_list:
-        return True
-    return False
 
-# def check_vowel(s,i):
-#     return 0 <= i < len(s) and s[i] in "aieouAEIOU"
+# def check_vowel(strng, position):
+#     strng = strng.lower()
+#     vowel_list = ["a","e","i","o","u"]
+#     if position < 0 or position > len(strng):
+#         return False
+#     if strng[position] in vowel_list:
+#         return True
+#     return False
+
+
+def check_vowel(s,i):
+    return 0 <= i < len(s) and s[i] in "aieouAEIOU"
