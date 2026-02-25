@@ -12,16 +12,17 @@
 # 625 --> 676
 # 114 --> -1  #  because 114 is not a perfect square
 
-def find_next_square(sq):
-    actual_root = sq ** 0.5
-    if actual_root % 1 != 0:
-        return -1
-    else:
-        return (actual_root + 1)*(actual_root + 1)
-
 
 # def find_next_square(sq):
 #     root = sq ** 0.5
 #     if root.is_integer():
 #         return (root + 1)**2
 #     return -1
+
+
+def find_next_square(sq):
+    actual_root = sq ** 0.5
+    if actual_root % 1 != 0:
+        return -1
+    else:
+        return (actual_root + 1)*(actual_root + 1)
