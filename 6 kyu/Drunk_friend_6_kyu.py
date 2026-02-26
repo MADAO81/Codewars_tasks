@@ -10,21 +10,7 @@
 # You should also test if the input is a string. If it is not, 
 # return "Input is not a string".
 
-def decode(string_):
-    if type(string_) != str:
-        return 'Input is not a string'
-    letters = "abcdefghijklmnopqrstuvwxyz"
-    translate = ""
-    for l in string_:
-        ind = letters.find(l.lower())
-        if l.isalpha() and l.islower():
-            translate = translate + letters[::-1][ind]
-        elif l.isalpha() and l.isupper():
-            translate = translate + letters[::-1][ind].upper()
-        else:
-            translate = translate + l
-    return translate
-    
+
     
 # def parse_character(char):
 #     if 65 <= ord(char) <= 90:
@@ -45,3 +31,21 @@ def decode(string_):
 #     t = st.translate(str.maketrans('abcdefghijklmnopqrstuvwxyz','zyxwvutsrqponmlkjihgfedcba'))
 #     ts = t.translate(str.maketrans('ABCDEFGHJIKLMNOPQRSTUVWXYZ','ZYXWVUTSQRPONMLKJIHGFEDCBA'))
 #     return ts
+
+
+
+def decode(string_):
+    if type(string_) != str:
+        return 'Input is not a string'
+    letters = "abcdefghijklmnopqrstuvwxyz"
+    translate = ""
+    for l in string_:
+        ind = letters.find(l.lower())
+        if l.isalpha() and l.islower():
+            translate = translate + letters[::-1][ind]
+        elif l.isalpha() and l.isupper():
+            translate = translate + letters[::-1][ind].upper()
+        else:
+            translate = translate + l
+    return translate
+    
