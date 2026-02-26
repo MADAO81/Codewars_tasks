@@ -16,12 +16,14 @@
 
 # Error checking for text strings or other invalid inputs is not required, only valid positive non-zero integers will be passed into the function.
 
-def narcissistic( value ):
-    degree_num = len(str(value))
-    result = 0
-    for i in str(value):
-        result += int(i)**degree_num
-    return result == value
 
-# def narcissistic(value):
-#     return value == sum(int(x) ** len(str(value)) for x in str(value))
+# def narcissistic( value ):
+#     degree_num = len(str(value))
+#     result = 0
+#     for i in str(value):
+#         result += int(i)**degree_num
+#     return result == value
+
+
+def narcissistic(value):
+    return value == sum(int(x) ** len(str(value)) for x in str(value))
