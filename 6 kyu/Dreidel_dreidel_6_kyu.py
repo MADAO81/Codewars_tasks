@@ -17,6 +17,14 @@
 # and the number of coins in the pot; the input will always be valid (non-negative integers). Return the number of coins left
 # in your account after the last roll. Note: you can have a negative amount at the end of the game.
 
+
+
+
+# gamble=lambda r,a,p:a+p-[p:=p-[p>>ord(r[0])-71,-1][r>'R']for r in r][-1]
+
+
+
+
 from math import floor
 
 def gamble(rolls, my_coins, pot):
@@ -36,4 +44,3 @@ def gamble(rolls, my_coins, pot):
     return my_coins
     
     
-# gamble=lambda r,a,p:a+p-[p:=p-[p>>ord(r[0])-71,-1][r>'R']for r in r][-1]
