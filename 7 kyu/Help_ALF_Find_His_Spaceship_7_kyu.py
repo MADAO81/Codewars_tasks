@@ -20,13 +20,7 @@
 # "Spaceship lost forever."
 # Can you help ALF?
 
-def find_spaceship(astromap):
-    if 'X' not in astromap:
-        return 'Spaceship lost forever.'
-    astromap = astromap.split('\n')
-    for i in astromap:
-        if 'X' in i:
-            return [i.index('X'), len(astromap) - (astromap.index(i) + 1)]
+
             
 # def find_spaceship(astromap):
 #     lines = astromap.splitlines()
@@ -35,3 +29,12 @@ def find_spaceship(astromap):
 #         if x != -1:
 #             return [x, len(lines) - 1 - y]
 #     return 'Spaceship lost forever.'
+
+
+def find_spaceship(astromap):
+    if 'X' not in astromap:
+        return 'Spaceship lost forever.'
+    astromap = astromap.split('\n')
+    for i in astromap:
+        if 'X' in i:
+            return [i.index('X'), len(astromap) - (astromap.index(i) + 1)]
