@@ -9,9 +9,7 @@
 # It should return a five digit integer. The number passed may be as large as 1000 digits.
 # Adapted from ProjectEuler.net
 
-def solution(digits):
-    numlist = [int(digits[i:i+5]) for i in range(0,len(digits)-4)]
-    return max(numlist)
+
 
 # def solution(digits):
 #     maximum = max(digits)
@@ -20,3 +18,8 @@ def solution(digits):
 #         if d == maximum:
 #             result.append(int(digits[e:e+5]))
 #     return max(result)
+
+
+def solution(digits):
+    numlist = [int(digits[i:i+5]) for i in range(0,len(digits)-4)]
+    return max(numlist)
