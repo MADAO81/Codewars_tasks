@@ -35,19 +35,19 @@
 # 0 <= len(commands) <= 500
 
 
-def will_robots_collide(x1, y1, x2, y2, commands):
-    for move in commands:
-        if move == 'U' and y1 < y2: y1 += 1
-        elif move == 'D' and y1 > y2: y1 -= 1
-        elif move == 'L' and x1 > x2: x1 -= 1
-        elif move == 'R' and x1 < x2: x1 += 1
-    for move in commands:
-        if move == 'U' and y2 < y1: y2 += 1
-        elif move == 'D' and y2 > y1: y2 -= 1
-        elif move == 'L' and x2 > x1: x2 -= 1
-        elif move == 'R' and x2 < x1: x2 += 1
-    return x1 == x2 and y1 == y2
+# def will_robots_collide(x1, y1, x2, y2, commands):
+#     for move in commands:
+#         if move == 'U' and y1 < y2: y1 += 1
+#         elif move == 'D' and y1 > y2: y1 -= 1
+#         elif move == 'L' and x1 > x2: x1 -= 1
+#         elif move == 'R' and x1 < x2: x1 += 1
+#     for move in commands:
+#         if move == 'U' and y2 < y1: y2 += 1
+#         elif move == 'D' and y2 > y1: y2 -= 1
+#         elif move == 'L' and x2 > x1: x2 -= 1
+#         elif move == 'R' and x2 < x1: x2 += 1
+#     return x1 == x2 and y1 == y2
 
 
-# def will_robots_collide(x1, y1, x2, y2, cmds):
-#     return sum(c in 'LR' for c in cmds) >= abs(x1 - x2) and sum(c in 'UD' for c in cmds) >= abs(y1 - y2)
+def will_robots_collide(x1, y1, x2, y2, cmds):
+    return sum(c in 'LR' for c in cmds) >= abs(x1 - x2) and sum(c in 'UD' for c in cmds) >= abs(y1 - y2)
